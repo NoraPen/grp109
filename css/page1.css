@@ -1,8 +1,8 @@
 /* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #A5ACAF; /* Gray background */
-    color: #333;
+    background-color:  #002244; /* Navy blue */
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
 
 /* Content Styling */
 #content {
-    background-color: #002244; /* Navy blue */
+    background-color: #A5ACAF; /* Gray background */
     padding: 20px;
     border: 2px solid #69BE28; /* Green border */
     border-radius: 8px;
