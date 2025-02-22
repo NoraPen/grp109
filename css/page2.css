@@ -4,8 +4,6 @@ body {
     background-color:  #002244; /* Navy blue */
     color: #333;
     padding: 20px;
-    justify-content: center;
-    display: flex;
 }
 /* Content Styling */
 #change-document {
