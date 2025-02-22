@@ -15,3 +15,17 @@ body {
     text-align: center;
     width: 90%;
 }
+
+button {
+    background-color: #69BE28; /* Green button matching the border */
+    color: white;
+    padding: 10px;
+    border:2px solid #002244;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top:4px;
+}
+button:hover {
+    background-color: #57a123; /* darker green on hover */
+}
