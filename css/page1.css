@@ -16,11 +16,32 @@ body {
     width: 90%;
 }
 
+/* Heading */
+h1 {
+    color: #002244; /* Navy blue for a consistent look */
+    margin-bottom: 20px;
+}
+
+
+/* Input */
+label {
+    font-weight: bold;
+    color: #002244; /* Navy blue */
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #bbb; /* change bordor on input box from black to gray */
+    border-radius: 4px;
+    margin-top:2px;
+}
+
+/* Button */
 button {
-    background-color: #69BE28; /* Green button matching the border */
+    background-color: #69BE28; /* Green button */
     color: white;
     padding: 10px;
-    border:2px solid #002244;
+    border:2px solid #002244;/* Navy blue border around button*/
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
