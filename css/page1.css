@@ -5,6 +5,7 @@ body {
     color: #333;
     padding: 20px;
     justify-content: center;
+    display: flex;
 }
 /* Content Styling */
 #content {
