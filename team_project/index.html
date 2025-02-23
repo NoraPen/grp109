@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Beau's Seattle Pet Rescue">
+    <meta name="keywords" content="HTML, Tables, JavaScript">
+    <meta name="author" content="TracyK., NoraP., and MargaretK.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beau's Seattle Pet Rescue</title>
+    <link rel="stylesheet" type="text/css" href="css/page1.css"> 
+</head>
+
+<body>
+    <div id="content">
+        <h1>Beau's Seattle Pet Rescue Sign Up</h1>
+        <p>Please enter your details to join our volunteer team.</p>
+
+        <!-- Volunteer registration form -->
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Link script -->
+    <!-- [TODO: Based on CSS, determine if defer, async, or normal is needed]-->
+    <script src="script.js"></script>
+</body>
+
+</html>
