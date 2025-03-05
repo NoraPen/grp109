@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Appreciation</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Volunteer Appreciation</h1>
+        <p>Welcome to our Volunteer Appreciation page! We are incredibly grateful for the dedication and hard work of our amazing volunteers. Your efforts make a significant impact, and we couldn't do it without you.</p>
+        
+        <h2>Thank You Messages</h2>
+        <div class="thank-you-messages" id="thank-you-messages">
+            <div class="message">
+                <h3>John Doe</h3>
+                <p>Thank you, John, for your unwavering support and enthusiasm in every event. Your positive attitude inspires us all!</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="message">
+                <h3>Jane Smith</h3>
+                <p>Jane, your dedication to helping our furry friends is truly remarkable. We're grateful for your kindness and compassion!</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <!-- Additional thank you messages will be added here -->
+        </div>
+        
+        <h2>Add a Thank You Message</h2>
+        <form id="thank-you-form">
+            <input type="text" id="name" placeholder="Enter volunteer name" required>
+            <textarea id="message" placeholder="Enter thank you message" required></textarea>
+            <button type="submit">Add Message</button>
+        </form>
+
+        <h2>Volunteer Spotlight</h2>
+        <div class="volunteer-spotlight">
+            <h3>Spotlight Volunteer: Emma Brown</h3>
+            <p>Emma has been volunteering with us for over two years. Her tireless efforts and creative ideas have made a lasting impact on our community. Thank you, Emma, for all that you do!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>For technical support, contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
+    </footer>
+
+    <script src="javascript/script.js"></script> <!-- Link to external JavaScript file for adding/removing messages -->
+</body>
+</html>
