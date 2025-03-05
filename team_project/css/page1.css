@@ -1,12 +1,133 @@
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #A5ACAF; /* Light Gray: Seahawks Silver */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #005C5C; /* Accent: Seattle Blue */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004a4a; /* Darker accent */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Light background color */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #005C5C; /* Accent: Seattle Blue */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #004a4a; /* Darker accent */
+}
+
+/* Thank You Messages Styling */
+.thank-you-messages .message {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-messages .message h3 {
+    color: #69BE28; /* Action Green */
+}
+
+.thank-you-messages .message p {
+    color: #333;
+}
+
+.thank-you-messages .remove-btn {
+    background-color: #005C5C; /* Accent: Seattle Blue */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.thank-you-messages .remove-btn:hover {
+    background-color: #004a4a; /* Darker accent */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #005C5C; /* Accent: Seattle Blue */
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
 /* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color:  #002244; /* Navy blue */
+    background-color: #002244; /* Navy blue */
     color: #333;
     padding: 20px;
     justify-content: center;
     display: flex;
 }
+
 /* Content Styling */
 #content {
     background-color: #A5ACAF; /* Gray background */
@@ -23,7 +144,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-
 /* Input */
 label {
     font-weight: bold;
@@ -32,9 +152,9 @@ label {
 
 input {
     padding: 8px;
-    border: 1px solid #bbb; /* change bordor on input box from black to gray */
+    border: 1px solid #bbb; /* change border on input box from black to gray */
     border-radius: 4px;
-    margin-top:2px;
+    margin-top: 2px;
 }
 
 /* Button */
@@ -42,12 +162,13 @@ button {
     background-color: #69BE28; /* Green button */
     color: white;
     padding: 10px;
-    border:2px solid #002244;/* Navy blue border around button*/
+    border: 2px solid #002244; /* Navy blue border around button */
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin-top:4px;
+    margin-top: 4px;
 }
+
 button:hover {
     background-color: #57a123; /* darker green on hover */
 }
