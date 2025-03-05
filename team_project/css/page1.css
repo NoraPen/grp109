@@ -1,14 +1,16 @@
-/* Container Styling */
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #A5ACAF; /* Light Gray: Seahawks Silver */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002244; /* Navy blue */
+    color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Navigation Bar Styling */
+/* Header Styling */
 nav {
     background-color: #005C5C; /* Accent: Seattle Blue */
     padding: 10px;
@@ -39,6 +41,17 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #004a4a; /* Darker accent */
+}
+
+/* Main Content Styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #A5ACAF; /* Light Gray: Seahawks Silver */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
 /* Form Styling */
@@ -114,61 +127,6 @@ footer {
     padding: 10px;
     background-color: #005C5C; /* Accent: Seattle Blue */
     color: white;
-    margin-top: 20px;
     border-radius: 5px;
-}
-
-/* General Page Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #002244; /* Navy blue */
-    color: #333;
-    padding: 20px;
-    justify-content: center;
-    display: flex;
-}
-
-/* Content Styling */
-#content {
-    background-color: #A5ACAF; /* Gray background */
-    padding: 20px;
-    border: 4px solid #69BE28; /* Green border */
-    border-radius: 8px;
-    text-align: center;
-    width: 90%;
-}
-
-/* Heading */
-h1 {
-    color: #002244; /* Navy blue for a consistent look */
-    margin-bottom: 20px;
-}
-
-/* Input */
-label {
-    font-weight: bold;
-    color: #002244; /* Navy blue */
-}
-
-input {
-    padding: 8px;
-    border: 1px solid #bbb; /* change border on input box from black to gray */
-    border-radius: 4px;
-    margin-top: 2px;
-}
-
-/* Button */
-button {
-    background-color: #69BE28; /* Green button */
-    color: white;
-    padding: 10px;
-    border: 2px solid #002244; /* Navy blue border around button */
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 4px;
-}
-
-button:hover {
-    background-color: #57a123; /* darker green on hover */
+    margin-top: 20px;
 }
