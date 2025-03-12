@@ -22,6 +22,25 @@
         <h1>Volunteer Appreciation</h1>
         <p>Welcome to our Volunteer Appreciation page! We are incredibly grateful for the dedication and hard work of our amazing volunteers. Your efforts make a significant impact, and we couldn't do it without you.</p>
         
+        <!-- Volunteer Carousel -->
+        <h2>Volunteer Carousel</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item active" data-volunteer="Margaret K">Volunteer 1</div>
+                <div class="carousel-item" data-volunteer="Nora P">Volunteer 2</div>
+                <div class="carousel-item" data-volunteer="Tracy K">Volunteer 3</div>
+            </div>
+            <button id="carousel-rewind">⟵</button>
+            <button id="carousel-advance">⟶</button>
+        </div>
+
+        <!-- Current Volunteer Display -->
+        <h3>Current Volunteer: <span id="volunteer-name">Volunteer</span></h3>
+
+        <!-- Timer Display -->
+        <div id="counter">Elapsed Time: <span id="elapsed-time">0</span> seconds</div>
+        
+        <!-- Thank You Messages -->
         <h2>Thank You Messages</h2>
         <div class="thank-you-messages" id="thank-you-messages">
             <div class="message">
@@ -36,6 +55,7 @@
             </div>
         </div>
         
+        <!-- Add a Thank You Message Form -->
         <h2>Add a Thank You Message</h2>
         <form id="thank-you-form">
             <label for="name">Volunteer Name</label>
@@ -48,22 +68,6 @@
                 <button type="submit">Add Message</button>
             </div>
         </form>
-
-        <h2>Volunteer Carousel</h2>
-        <div class="carousel-container">
-            <div class="carousel" id="carousel">
-                <div class="carousel-item active" data-volunteer="Margaret K">Volunteer 1</div>
-                <div class="carousel-item" data-volunteer="Nora P">Volunteer 2</div>
-                <div class="carousel-item" data-volunteer="Tracy K">Volunteer 3</div>
-            </div>
-            <button id="carousel-rewind">⟵</button>
-            <button id="carousel-advance">⟶</button>
-        </div>
-
-        <!-- Current Volunteer Display -->
-        <h3>Current Volunteer: <span id="volunteer-name">John Doe</span></h3>
-
-        <div id="counter">Elapsed Time: <span id="elapsed-time">0</span> seconds</div>
     </div>
 
     <!-- Footer -->
