@@ -50,14 +50,21 @@ nav ul li a:hover {
 
 /* Form Styling */
 form {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px; 
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 15px; 
     margin-top: 20px;
-    background-color: #f0f0f0; /* Light background color */
-    padding: 15px;
+    padding: 20px;
+    background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 form input,
@@ -72,25 +79,29 @@ form textarea {
 
 form textarea {
     resize: none; 
-    height: 100px; 
+    height: 120px; 
 }
 
-form button {
-    width: auto; 
-    align-self: flex-start; 
-    background-color: #005C5C; /* Accent: Seattle Blue */
-    color: white;
-    border: none;
+.form-actions {
+    text-align: left; 
+}
+
+.form-actions button {
     padding: 10px 20px;
     font-size: 16px;
+    background-color: #005C5C; /* Accent color */
+    color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #004a4a; /* Darker accent */
+.form-actions button:hover {
+    background-color: #004a4a; /* Darker accent color on hover */
 }
+
+
 
 /* Thank-You Messages Styling */
 .thank-you-messages .message {
@@ -99,30 +110,38 @@ form button:hover {
     background-color: #E6E6E6;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
 }
 
 .thank-you-messages .message h3 {
     color: #69BE28; /* Action Green */
+    margin: 0;
+    font-size: 18px;
 }
 
 .thank-you-messages .message p {
     color: #333;
+    margin: 10px 0; 
 }
 
 .thank-you-messages .remove-btn {
+    position: absolute; 
+    top: 15px; 
+    right: 15px; 
     background-color: #005C5C; /* Accent: Seattle Blue */
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
-    margin-top: 10px;
     transition: background-color 0.3s;
+    font-size: 14px;
 }
 
 .thank-you-messages .remove-btn:hover {
     background-color: #004a4a; /* Darker accent */
 }
+
 
 /* Carousel Styling */
 .carousel-container {
