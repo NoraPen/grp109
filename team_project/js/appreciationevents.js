@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function resetTimer() {
-        elapsedTime = 0; 
-        elapsedTimeSpan.textContent = elapsedTime; 
-        clearInterval(timerInterval); 
-        startTimer(); 
+        elapsedTime = 0; // Reset the elapsed time
+        elapsedTimeSpan.textContent = elapsedTime; // Update the display immediately
+        clearInterval(timerInterval); // Clear the existing timer
+        startTimer(); // Start a new timer
     }
 
     function startTimer() {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function resetAutoScroll() {
-        clearInterval(autoScrollInterval); 
+        clearInterval(autoScrollInterval); // Clear the existing auto-scroll interval
         startAutoScroll(); // Start a new interval
     }
 
@@ -64,16 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
         currentIndex = (currentIndex - 1 + items.length) % items.length;
         updateCarousel(currentIndex);
         rewindSound.play();
-        resetTimer(); 
-        resetAutoScroll(); 
+        resetTimer(); // Reset the timer when manually navigating
+        resetAutoScroll(); // Reset auto-scroll when manually navigating
     });
 
     advanceBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % items.length;
         updateCarousel(currentIndex);
         advanceSound.play();
-        resetTimer(); 
-        resetAutoScroll();
+        resetTimer(); // Reset the timer when manually navigating
+        resetAutoScroll(); // Reset auto-scroll when manually navigating
     });
 
     // THANK-YOU MESSAGE FUNCTIONS
@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const name = nameInput.value.trim();
+        event.preventDefault(); // Prevent default form submission
+        const name = nameInput.value.trim(); // Trim input for cleaner data
         const message = messageInput.value.trim();
 
         if (name && message) {
