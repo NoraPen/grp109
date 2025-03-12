@@ -51,8 +51,8 @@ nav ul li a:hover {
 /* Form Styling */
 form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; 
+    gap: 15px; 
     margin-top: 20px;
     background-color: #f0f0f0; /* Light background color */
     padding: 15px;
@@ -62,17 +62,26 @@ form {
 
 form input,
 form textarea {
+    width: 100%; 
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form textarea {
+    resize: none; 
+    height: 100px; 
 }
 
 form button {
+    width: auto; 
+    align-self: flex-start; 
     background-color: #005C5C; /* Accent: Seattle Blue */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
