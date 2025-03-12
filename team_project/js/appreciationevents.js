@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     let elapsedTime = 0;
     let autoScrollInterval = null;
+    let timerInterval = null;
 
     // AUDIO FILES
     const rewindSound = new Audio('sounds/rewind.mp3');
@@ -27,44 +28,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Update the volunteer name based on the active item's data attribute
         const activeItem = items[index];
-        volunteerName.textContent = activeItem.getAttribute('data-volunteer');
+        const volunteer = activeItem.getAttribute('data-volunteer');
+        if (volunteerName && volunteer) {
+            volunteerName.textContent = volunteer;
+        }
     }
 
     function resetTimer() {
-        elapsedTime = 0;
-        clearInterval(autoScrollInterval);
-        autoScrollInterval = startAutoScroll();
+        elapsedTime = 0; 
+        elapsedTimeSpan.textContent = elapsedTime; 
+        clearInterval(timerInterval); 
+        startTimer(); 
     }
 
-    function startAutoScroll() {
-        return setInterval(() => {
+    function startTimer() {
+        timerInterval = setInterval(() => {
             elapsedTime++;
             elapsedTimeSpan.textContent = elapsedTime;
         }, 1000);
+    }
+
+    function resetAutoScroll() {
+        clearInterval(autoScrollInterval); 
+        startAutoScroll(); // Start a new interval
+    }
+
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel(currentIndex);
+        }, 3000); // Change the carousel every 3 seconds
     }
 
     rewindBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + items.length) % items.length;
         updateCarousel(currentIndex);
         rewindSound.play();
-        resetTimer();
+        resetTimer(); 
+        resetAutoScroll(); 
     });
 
     advanceBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % items.length;
         updateCarousel(currentIndex);
         advanceSound.play();
-        resetTimer();
+        resetTimer(); 
+        resetAutoScroll();
     });
-
-    // Automatically scroll every 3 seconds
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % items.length;
-        updateCarousel(currentIndex);
-    }, 3000);
-
-    // Start the interval for elapsed time counter
-    autoScrollInterval = startAutoScroll();
 
     // THANK-YOU MESSAGE FUNCTIONS
     function addThankYouMessage(name, message) {
@@ -92,9 +102,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-        const name = nameInput.value;
-        const message = messageInput.value;
+        event.preventDefault();
+        const name = nameInput.value.trim();
+        const message = messageInput.value.trim();
 
         if (name && message) {
             addThankYouMessage(name, message);
@@ -113,4 +123,8 @@ document.addEventListener('DOMContentLoaded', function () {
             messageDiv.parentElement.removeChild(messageDiv);
         });
     });
+
+    // Initialize Timer and Auto-Scroll
+    startTimer();
+    startAutoScroll();
 });
