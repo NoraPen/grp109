@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Carousel</title>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/page1.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#appreciation">Appreciation</a></li>
+            <li><a href="https://norapen.github.io/grp109/team_project/appreciationPage.html">Appreciation</a></li>
             <li><a href="#volunteer">Volunteer Signup</a></li>
         </ul>
     </nav>
 
-    <!-- Carousel and Counter Section -->
     <div class="carousel-wrapper">
         <div class="carousel-container">
             <div class="carousel" id="carousel">
-                <div class="carousel-item active" data-volunteer="Margaret K"></div>
-                <div class="carousel-item" data-volunteer="Nora P"></div>
-                <div class="carousel-item" data-volunteer="Tracy K"></div>
+                <div class="carousel-item">
+                    <img src="https://norapen.github.io/grp109/team_project/images/seattledog2.jpg?raw=true" alt="Volunteer Margaret K">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://norapen.github.io/grp109/team_project/images/seattledog3.jpg?raw=true" alt="Volunteer Nora P">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://norapen.github.io/grp109/team_project/images/seattledog4.jpg?raw=true" alt="Volunteer Tracy K">
+                </div>
             </div>
         </div>
         <div id="counter">Elapsed Time: <span id="elapsed-time">0</span> seconds</div>
+        <p id="volunteer-name">Margaret K</p>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>For technical support, contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
     </footer>
 
-    <!-- Link to external JavaScript file -->
     <script src="js/appreciationevents.js"></script>
 </body>
 </html>
