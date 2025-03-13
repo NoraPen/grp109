@@ -85,11 +85,25 @@ nav ul li a:hover {
     color: white;
     font-size: 24px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover; /* Ensures images cover the item area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of images */
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url('https://norapen.github.io/grp109/team_project/images/seattledog2.jpg?raw=true'); /* Path to first image */
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('https://norapen.github.io/grp109/team_project/images/seattledog3.jpg?raw=true'); /* Path to second image */
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('https://norapen.github.io/grp109/team_project/images/seattledog4.jpg?raw=true'); /* Path to third image */
 }
 
 .carousel-item.active {
-    opacity: 1;
+    opacity: 1; /* Makes the active carousel item visible */
 }
 
 /* Counter Styling */
