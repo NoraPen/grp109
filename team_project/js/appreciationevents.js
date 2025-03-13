@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start Auto-Scroll
     function startAutoScroll() {
         autoScrollInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % items.length;
+            currentIndex = (currentIndex + 1) % items.length; // Loop through items
             updateCarousel(currentIndex);
-        }, 3000); // Auto-scrolls every 3 seconds
+        }, 3000); // Auto-scroll every 3 seconds
     }
 
     // Event Listener for Rewind/Advance
@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Initialize Timer and Auto-Scroll
+    updateCarousel(currentIndex); // Ensure the first item is visible
     startTimer();
     startAutoScroll();
 });
