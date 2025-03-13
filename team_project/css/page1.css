@@ -6,8 +6,8 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent scrolling */
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Navigation Styling */
@@ -46,64 +46,53 @@ nav ul li a:hover {
 
 /* Carousel Wrapper Styling */
 .carousel-wrapper {
-    flex: 0 1 auto; /* Prevents stretching and maintains responsiveness */
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 800px;
     width: 90%;
-    height: 50vh; /* Explicitly limit the height of the wrapper */
+    height: 50vh;
     margin: auto;
     padding: 10px;
     background-color: #A5ACAF; /* Seahawks Silver */
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-/* Carousel Styling */
+/* Carousel Container Styling */
 .carousel-container {
-    width: 90%;
-    height: 40vh; /* Fit carousel inside the wrapper */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #69BE28; /* Seahawks Green */
     border: 5px solid #005C5C;
     border-radius: 8px;
-    overflow: hidden;
-    background-color: #69BE28;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
 }
 
+/* Carousel Item Styling */
 .carousel-item {
-    flex: 0 0 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
+    display: none;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    background-size: cover; /* Ensures images cover the item area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling of images */
 }
 
-.carousel-item:nth-child(1) {
-    background-image: url('https://norapen.github.io/grp109/team_project/images/seattledog2.jpg?raw=true'); /* Path to first image */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px; 
 }
 
-.carousel-item:nth-child(2) {
-    background-image: url('https://norapen.github.io/grp109/team_project/images/seattledog3.jpg?raw=true'); /* Path to second image */
-}
-
-.carousel-item:nth-child(3) {
-    background-image: url('https://norapen.github.io/grp109/team_project/images/seattledog4.jpg?raw=true'); /* Path to third image */
-}
-
+/* Active Carousel Item */
 .carousel-item.active {
-    opacity: 1; /* Makes the active carousel item visible */
+    display: block; /* Show the active item */
 }
 
 /* Counter Styling */
@@ -112,19 +101,29 @@ nav ul li a:hover {
     margin-top: 10px;
     text-align: center;
     color: #333;
-    background-color: #E6E6E6;
+    background-color: #E6E6E6; /* Light gray counter background */
     padding: 10px;
     border-radius: 5px;
     width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Volunteer Name Styling */
+#volunteer-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #005C5C;
+    background-color: #005C5C; /* Seattle Blue */
     color: white;
     width: 100%;
-    flex-shrink: 0; /* Ensures the footer stays visible */
-    position: relative; /* Properly positions the footer */
+    flex-shrink: 0; 
 }
