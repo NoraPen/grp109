@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // VARIABLES
     const carousel = document.getElementById('carousel');
     const items = carousel.querySelectorAll('.carousel-item');
-    const rewindBtn = document.getElementById('carousel-rewind');
-    const advanceBtn = document.getElementById('carousel-advance');
     const volunteerName = document.getElementById('volunteer-name');
     const elapsedTimeSpan = document.getElementById('elapsed-time');
     const thankYouMessagesContainer = document.getElementById('thank-you-messages');
@@ -16,17 +13,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let autoScrollInterval = null;
     let timerInterval = null;
 
-    // AUDIO FILES
+    // Audio Files
     const rewindSound = new Audio('sounds/rewind.mp3');
     const advanceSound = new Audio('sounds/advance.mp3');
 
-    // CAROUSEL FUNCTIONS
+    // Function to update the carousel
     function updateCarousel(index) {
         items.forEach((item, i) => {
             item.classList.toggle('active', i === index);
         });
 
-        // Update the volunteer name based on the active item's data attribute
         const activeItem = items[index];
         const volunteer = activeItem.getAttribute('data-volunteer');
         if (volunteerName && volunteer) {
@@ -34,13 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Reset Timer
     function resetTimer() {
-        elapsedTime = 0; // Reset the elapsed time
-        elapsedTimeSpan.textContent = elapsedTime; // Update the display immediately
-        clearInterval(timerInterval); // Clear the existing timer
-        startTimer(); // Start a new timer
+        elapsedTime = 0;
+        elapsedTimeSpan.textContent = elapsedTime;
+        clearInterval(timerInterval);
+        startTimer();
     }
 
+    // Start Timer
     function startTimer() {
         timerInterval = setInterval(() => {
             elapsedTime++;
@@ -48,35 +46,43 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
 
+    // Reset Auto-Scroll
     function resetAutoScroll() {
-        clearInterval(autoScrollInterval); // Clear the existing auto-scroll interval
-        startAutoScroll(); // Start a new interval
+        clearInterval(autoScrollInterval);
+        startAutoScroll();
     }
 
+    // Start Auto-Scroll
     function startAutoScroll() {
         autoScrollInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % items.length;
             updateCarousel(currentIndex);
-        }, 3000); // Change the carousel every 3 seconds
+        }, 3000);
     }
 
-    rewindBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        updateCarousel(currentIndex);
-        rewindSound.play();
-        resetTimer(); // Reset the timer when manually navigating
-        resetAutoScroll(); // Reset auto-scroll when manually navigating
+    // Event Listener for Rewind/Advance
+    carousel.addEventListener('click', function (event) {
+        const carouselWidth = carousel.offsetWidth;
+        const clickPosition = event.clientX - carousel.getBoundingClientRect().left;
+
+        if (clickPosition < carouselWidth / 2) {
+            // Left side clicked (Rewind)
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            updateCarousel(currentIndex);
+            rewindSound.play();
+        } else {
+            // Right side clicked (Advance)
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel(currentIndex);
+            advanceSound.play();
+        }
+
+        // Reset the timer and auto-scroll
+        resetTimer();
+        resetAutoScroll();
     });
 
-    advanceBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % items.length;
-        updateCarousel(currentIndex);
-        advanceSound.play();
-        resetTimer(); // Reset the timer when manually navigating
-        resetAutoScroll(); // Reset auto-scroll when manually navigating
-    });
-
-    // THANK-YOU MESSAGE FUNCTIONS
+    // Thank-You Message Functions
     function addThankYouMessage(name, message) {
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message');
