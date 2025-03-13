@@ -150,6 +150,17 @@ form textarea {
     position: relative;
 }
 
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#counter {
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
 .carousel {
     display: flex;
     overflow: hidden;
