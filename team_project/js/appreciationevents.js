@@ -3,19 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const items = carousel.querySelectorAll('.carousel-item');
     const volunteerName = document.getElementById('volunteer-name');
     const elapsedTimeSpan = document.getElementById('elapsed-time');
-    const thankYouMessagesContainer = document.getElementById('thank-you-messages');
-    const form = document.getElementById('thank-you-form');
-    const nameInput = document.getElementById('name');
-    const messageInput = document.getElementById('message');
-
     let currentIndex = 0;
     let elapsedTime = 0;
     let autoScrollInterval = null;
     let timerInterval = null;
 
     // Audio Files
-    const rewindSound = new Audio('sounds/rewind.mp3');
-    const advanceSound = new Audio('sounds/advance.mp3');
+    const rewindSound = new Audio('https://norapen.github.io/grp109/team_project/sounds/beep-sound-short-237619.mp3');
+    const advanceSound = new Audio('https://norapen.github.io/grp109/team_project/sounds/ping-306439.mp3');
 
     // Function to update the carousel
     function updateCarousel(index) {
@@ -57,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         autoScrollInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % items.length;
             updateCarousel(currentIndex);
-        }, 3000);
+        }, 3000); // Auto-scrolls every 3 seconds
     }
 
     // Event Listener for Rewind/Advance
@@ -69,65 +64,17 @@ document.addEventListener('DOMContentLoaded', function () {
             // Left side clicked (Rewind)
             currentIndex = (currentIndex - 1 + items.length) % items.length;
             updateCarousel(currentIndex);
-            rewindSound.play();
+            rewindSound.play().catch(error => console.error('Rewind sound error:', error));
         } else {
             // Right side clicked (Advance)
             currentIndex = (currentIndex + 1) % items.length;
             updateCarousel(currentIndex);
-            advanceSound.play();
+            advanceSound.play().catch(error => console.error('Advance sound error:', error));
         }
 
         // Reset the timer and auto-scroll
         resetTimer();
         resetAutoScroll();
-    });
-
-    // Thank-You Message Functions
-    function addThankYouMessage(name, message) {
-        const messageDiv = document.createElement('div');
-        messageDiv.classList.add('message');
-
-        const messageHeader = document.createElement('h3');
-        messageHeader.textContent = name;
-
-        const messageParagraph = document.createElement('p');
-        messageParagraph.textContent = message;
-
-        const removeButton = document.createElement('button');
-        removeButton.classList.add('remove-btn');
-        removeButton.textContent = 'Remove';
-        removeButton.addEventListener('click', function () {
-            thankYouMessagesContainer.removeChild(messageDiv);
-        });
-
-        messageDiv.appendChild(messageHeader);
-        messageDiv.appendChild(messageParagraph);
-        messageDiv.appendChild(removeButton);
-
-        thankYouMessagesContainer.appendChild(messageDiv);
-    }
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-        const name = nameInput.value.trim(); // Trim input for cleaner data
-        const message = messageInput.value.trim();
-
-        if (name && message) {
-            addThankYouMessage(name, message);
-            nameInput.value = ''; // Clear form fields
-            messageInput.value = '';
-        } else {
-            alert('Please provide both a name and a message.');
-        }
-    });
-
-    // Initialize existing "Remove" buttons
-    const removeButtons = document.querySelectorAll('.remove-btn');
-    removeButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            const messageDiv = button.parentElement;
-            messageDiv.parentElement.removeChild(messageDiv);
-        });
     });
 
     // Initialize Timer and Auto-Scroll
