@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteer Appreciation</title>
+    <title>Volunteer Carousel</title>
     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="css/page1.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -13,65 +13,21 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="https://norapen.github.io/grp109/team_project/appreciationPage.html">Appreciation Page</a></li>
-            <li><a href="#volunter">Volunteer Signup</a></li>
+            <li><a href="#appreciation">Appreciation</a></li>
+            <li><a href="#volunteer">Volunteer Signup</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>Volunteer Appreciation</h1>
-        <p>Welcome to our Volunteer Appreciation page! We are incredibly grateful for the dedication and hard work of our amazing volunteers. Your efforts make a significant impact, and we couldn't do it without you.</p>
-        
-        <!-- Volunteer Carousel -->
-        <h2>Volunteer Carousel</h2>
-        <div class="carousel-wrapper">
-            <div class="carousel-container">
-                <div class="carousel" id="carousel">
-                    <div class="carousel-item active" data-volunteer="Margaret K">Volunteer 1</div>
-                    <div class="carousel-item" data-volunteer="Nora P">Volunteer 2</div>
-                    <div class="carousel-item" data-volunteer="Tracy K">Volunteer 3</div>
-                </div>
+    <!-- Carousel and Counter Section -->
+    <div class="carousel-wrapper">
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item active" data-volunteer="Margaret K">Volunteer 1</div>
+                <div class="carousel-item" data-volunteer="Nora P">Volunteer 2</div>
+                <div class="carousel-item" data-volunteer="Tracy K">Volunteer 3</div>
             </div>
-            <div id="counter">Elapsed Time: <span id="elapsed-time">0</span> seconds</div>
         </div>
-            <button id="carousel-rewind">⟵</button>
-            <button id="carousel-advance">⟶</button>
-        </div>
-
-        <!-- Current Volunteer Display -->
-        <h3>Current Volunteer: <span id="volunteer-name">Volunteer</span></h3>
-
-        <!-- Timer Display -->
         <div id="counter">Elapsed Time: <span id="elapsed-time">0</span> seconds</div>
-        
-        <!-- Thank You Messages -->
-        <h2>Thank You Messages</h2>
-        <div class="thank-you-messages" id="thank-you-messages">
-            <div class="message">
-                <h3>Sherlock Bones</h3>
-                <p>Thank you, Sherlock Bones, for your unwavering support and enthusiasm in every event. Your paw-sitive attitude inspires us all!</p>
-                <button class="remove-btn">Remove</button>
-            </div>
-            <div class="message">
-                <h3>Winnie the Pooch</h3>
-                <p>Winnie the Pooch, your dedication to helping our furry friends is truly rebarkable. We're grateful for your kindness and compassion!</p>
-                <button class="remove-btn">Remove</button>
-            </div>
-        </div>
-        
-        <!-- Add a Thank You Message Form -->
-        <h2>Add a Thank You Message</h2>
-        <form id="thank-you-form">
-            <label for="name">Volunteer Name</label>
-            <input type="text" id="name" placeholder="Enter volunteer name" required>
-            
-            <label for="message">Thank You Message</label>
-            <textarea id="message" placeholder="Enter thank you message" required></textarea>
-            
-            <div class="form-actions">
-                <button type="submit">Add Message</button>
-            </div>
-        </form>
     </div>
 
     <!-- Footer -->
@@ -79,6 +35,7 @@
         <p>For technical support, contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
     </footer>
 
-    <script src="js/appreciationevents.js"></script> <!-- Link to external JavaScript file for adding/removing messages -->
+    <!-- Link to external JavaScript file -->
+    <script src="js/carousel.js"></script>
 </body>
 </html>
