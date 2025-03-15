@@ -23,7 +23,7 @@ body {
  
  /* Heading */
  h1 {
-     color: #002244; /* Navy blue for a consistent look */
+     color: #002244; /* Navy blue*/
      margin-bottom: 20px;
  }
  
@@ -134,3 +134,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.home-image {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+    
