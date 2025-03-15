@@ -1,10 +1,14 @@
 const container = document.querySelector('.scrolling-text');
-let amount = 0;
+let scrollAmount = 0;
+const speed = 2;
 
 setInterval(() => {
- amount += 10;
- container.scrollLeft = amount;
- if (amount >= container.scrollWidth) {
-  amount = 0;
- }
-}, 20);
+    if (!container) return;
+
+    scrollAmount += speed;
+    container.scrollLeft = scrollAmount;
+
+    if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+        scrollAmount = 0; 
+    }
+}, 30); 
