@@ -154,3 +154,21 @@ nav ul li a:hover {
     font-family:"AjarSansRegular";
 }
     
+/*Link Color*/
+
+/* Default Link */
+a {
+    color: #1E90FF; /* Blue link color */
+    text-decoration: none; /* Remove underline*/
+}
+
+/* Hover Link */
+a:hover {
+    color: #FF6347; /* Red color  */
+    text-decoration: underline; /* Underline */
+}
+
+/* Link Color (when clicked) */
+a:active {
+    color: #32CD32; /* Green color*/
+}
