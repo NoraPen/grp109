@@ -30,3 +30,20 @@
      width: 90%;
      color: #002244;
  }    
+
+/*Link Color*/
+
+/* Default Link */
+a {
+    color: #0000FF; /* Blue link color */
+}
+
+/* Hover Link */
+a:hover {
+    color: #FF6347; /* Red color  */
+}
+
+/* Link Color (when clicked) */
+a:active {
+    color: #32CD32; /* Green color*/
+}
