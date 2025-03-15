@@ -26,8 +26,14 @@ body {
      color: #002244; /* Navy blue*/
      margin-bottom: 20px;
  }
- 
- 
+
+
+ p {
+    font-family: 'PlayfairDisplayRegular';
+    font-weight: normal;
+    font-style: normal;
+ }
+
  /* Input */
  label {
      font-weight: bold;
