@@ -204,21 +204,17 @@ a:active {
     color: #32CD32; /* Green color*/
 }
 
+/*Link blinking after 2 seconds*/
 .blinking-link {
     text-decoration: none;
-    transition: opacity 0.5s ease-in-out; 
 }
 
 .blinking-link:hover {
-    animation: blink 1s infinite; 
+    animation: blink 0.5s steps(1, end) 2s forwards; /
 }
 
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-.blinking-link:hover {
-    animation-delay: 2s;
 }
