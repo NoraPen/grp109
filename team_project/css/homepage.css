@@ -107,7 +107,7 @@ nav ul li a:hover {
      text-align: center;
      width: 60%;
      margin-bottom: 20px;
-    background-image: url("https://img.freepik.com/premium-psd/puppy-dog-isolated-transparent-background-vector-illustration_915071-19583.jpg?w=2000");
+    background-image: url("images/dogcartoon.jpg");
     background-size:contain;
     background-position: right;
     background-repeat:no-repeat;
@@ -165,6 +165,11 @@ nav ul li a:hover {
 .scrolling-text {
     font-family:"AjarSansRegular";
     font-size: 18px;
+    width: 30vw;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
     
 /*Link Color*/
