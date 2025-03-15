@@ -123,8 +123,6 @@ nav ul li a:hover {
     border: 4px solid #69BE28; /* Green border */
     border-radius: 8px;
     margin-bottom: 20px;
-    justify-content: center;
-    align-content: center;
 }
 
 .left-container {
@@ -141,8 +139,6 @@ nav ul li a:hover {
     border: 4px solid #69BE28; /* Green border */
     border-radius: 8px;
     margin-bottom: 20px;
-    justify-content: center;
-    align-content: center;
 }
 
 .home-image {
