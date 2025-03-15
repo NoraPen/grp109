@@ -150,8 +150,17 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
+.right-box-text {
+    font-family:"AjarSansRegular";
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #002244;
+}
+
 .scrolling-text {
     font-family:"AjarSansRegular";
+    font-size: 18px;
 }
     
 /*Link Color*/
@@ -170,3 +179,5 @@ a:hover {
 a:active {
     color: #32CD32; /* Green color*/
 }
+
+
