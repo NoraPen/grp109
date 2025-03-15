@@ -173,15 +173,24 @@ nav ul li a:hover {
 }
 
 .scrolling-text {
-    font-family:"AjarSansRegular";
+    font-family: "AjarSansRegular";
     font-size: 18px;
-    width: 30vw;
+    width: 30vw; 
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
-    
+
+
+.scrolling-text span {
+    display: inline-block;
+    padding-right: 30px;
+    min-width: 100%; 
+}
+
 /*Link Color*/
 
 /* Default Link */
