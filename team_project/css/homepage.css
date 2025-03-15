@@ -55,7 +55,8 @@ footer {
     background-color: #005C5C; /* Seattle Blue */
     color: white;
     width: 100%;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    font-family: Arial, sans-serif;
 }
 
 
