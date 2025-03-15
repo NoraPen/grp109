@@ -99,12 +99,13 @@ nav ul li a:hover {
      border-radius: 8px;
      text-align: center;
      width: 90%;
-     bottom-margin: 20px;
+     margin-bottom: 20px;
  }
 
 .bottom-container {
     width: 90%;
     gap: 20px; 
+    display:flex;
 }
 
 #right-box {
@@ -114,7 +115,7 @@ nav ul li a:hover {
     text-align: center;
     border: 4px solid #69BE28; /* Green border */
     border-radius: 8px;
-    bottom-margin: 20px;
+    margin-bottom: 20px;
 }
 
 .left-container {
@@ -130,5 +131,5 @@ nav ul li a:hover {
     text-align: center;
     border: 4px solid #69BE28; /* Green border */
     border-radius: 8px;
-    bottom-margin: 20px;
+    margin-bottom: 20px;
 }
