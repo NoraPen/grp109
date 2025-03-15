@@ -127,3 +127,20 @@ footer {
     width: 100%;
     flex-shrink: 0; 
 }
+
+/*Link Color*/
+
+/* Default Link */
+a {
+    color: #0000FF; /* Blue link color */
+}
+
+/* Hover Link */
+a:hover {
+    color: #FF6347; /* Red color  */
+}
+
+/* Link Color (when clicked) */
+a:active {
+    color: #32CD32; /* Green color*/
+}
