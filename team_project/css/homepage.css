@@ -107,6 +107,10 @@ nav ul li a:hover {
      text-align: center;
      width: 60%;
      margin-bottom: 20px;
+    background-image: url("https://www.pngfind.com/pngs/m/369-3696233_dog-bulldog-puppy-cartoon-cute-dog-clipart-hd.png");
+    background-size:contain;
+    background-position: right;
+    background-repeat:no-repeat;
  }
 
 .bottom-container {
