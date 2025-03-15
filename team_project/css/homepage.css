@@ -158,14 +158,12 @@ nav ul li a:hover {
 
 /* Default Link */
 a {
-    color: #1E90FF; /* Blue link color */
-    text-decoration: none; /* Remove underline*/
+    color: #0000FF; /* Blue link color */
 }
 
 /* Hover Link */
 a:hover {
     color: #FF6347; /* Red color  */
-    text-decoration: underline; /* Underline */
 }
 
 /* Link Color (when clicked) */
