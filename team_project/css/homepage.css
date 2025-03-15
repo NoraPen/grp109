@@ -106,7 +106,7 @@ nav ul li a:hover {
     gap: 20px; 
 }
 
-#left-box {
+#right-box {
     background-color: #A5ACAF; /* Gray background */
     width: 50%;
     height: 300px;
@@ -115,13 +115,13 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-.right-container {
+.left-container {
     flex-direction: column;
     width: 50%;
     gap: 20px;
 }
 
-#right-box {
+#left-box {
     background-color: #A5ACAF; /* Gray background */
     width: 50%;
     height: 95px;
