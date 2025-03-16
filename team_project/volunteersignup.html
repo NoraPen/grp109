@@ -27,9 +27,15 @@
             <h2>Join Our Team</h2>
             <form id="volunteerForm" onsubmit="return validateForm(event)">
                 <div class="form-group">
-                    <label for="fullName">Full Name *</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                    <div class="error-message" id="fullNameError">Please enter your full name</div>
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <div class="error-message" id="firstNameError">Please enter your first name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <div class="error-message" id="lastNameError">Please enter your last name</div>
                 </div>
                 
                 <div class="form-group">
@@ -72,7 +78,6 @@
             </form>
         </section>
     </div>
-    
     
     <script src="js/validateform.js"></script>
 </body>
