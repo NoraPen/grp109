@@ -1,6 +1,6 @@
 const container = document.querySelector('.scrolling-text');
 let scrollAmount = 0;
-const speed = 1;
+const speed = 2;
 
 setInterval(() => {
     if (!container) return;

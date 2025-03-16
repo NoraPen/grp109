@@ -55,8 +55,7 @@ footer {
     background-color: #005C5C; /* Seattle Blue */
     color: white;
     width: 100%;
-    flex-shrink: 0;
-    font-family: Arial, sans-serif;
+    flex-shrink: 0; 
 }
 
 
@@ -119,6 +118,10 @@ nav ul li a:hover {
      text-align: center;
      width: 60%;
      margin-bottom: 20px;
+    background-image: url("images/dogcartoon.jpg");
+    background-size:contain;
+    background-position: right;
+    background-repeat:no-repeat;
  }
 
 .bottom-container {
@@ -179,7 +182,7 @@ nav ul li a:hover {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    max-width: 120px;
+    max-width: 40px;
 }
 
 
@@ -201,17 +204,4 @@ a:active {
     color: #32CD32; /* Green color*/
 }
 
-/*Link blinking after 2 seconds*/
-.blinking-link {
-    text-decoration: none;
-}
 
-.blinking-link:hover {
-    animation: blink 0.5s steps(1, end) 2s forwards; /
-}
-
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
