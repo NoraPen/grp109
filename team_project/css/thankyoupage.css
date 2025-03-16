@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002244;
+    color: white;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #005C5C;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #69BE28;
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1 {
+    color: #69BE28;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 8px;
+    margin-top: 2em;
+}
+
+h2 {
+    color: #69BE28;
+    margin-bottom: 1em;
+}
+
+/* Thank you image styles */
+.thank-you-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* List styles */
+ul {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Link styles */
+a {
+    color: #69BE28;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 2em;
+}
+
+footer a {
+    color: #69BE28;
+} 
