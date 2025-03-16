@@ -60,6 +60,17 @@ h1 {
     margin-bottom: 30px;
 }
 
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #005C5C; /* Seattle Blue */
+    color: white;
+    width: 100%;
+    flex-shrink: 0; 
+}
+
+
 /* Responsive Bottom Container */
 .bottom-container {
     width: 90%;
