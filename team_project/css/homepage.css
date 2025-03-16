@@ -147,11 +147,6 @@ a:active {
 }
 
 /*Link the blinks after 2 seconds*/
-.blinking-link {
-    color: black; 
-    text-decoration: none;
-}
-
 .blinking-link:hover {
     animation: blink 0.4s steps(1, end) 2s forwards; 
 }
