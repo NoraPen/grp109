@@ -95,10 +95,17 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+/* Volunteer Presentation Text Styling */
 #right-box-text {
     font-size: 1.2em;
     color: #F5F5F5; /* RETAINED: Very light gray text for readability */
     margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.5; /* UPDATED: Ensures minimum line height for accessibility */
+    margin: 0; /* Adjusts spacing if needed */
 }
 
 /* Footer Styling */
