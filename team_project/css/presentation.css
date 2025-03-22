@@ -72,6 +72,7 @@ nav ul li a:hover {
     align-items: flex-start;
 }
 
+/* Right Box Styling (Parent Container) */
 #right-box {
     background-color: #A5ACAF; /* Seahawks Silver */
     border: 5px solid #005C5C; /* Seattle Blue */
@@ -79,7 +80,22 @@ nav ul li a:hover {
     padding: 25px;
     text-align: center;
     max-width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
+/* Embedded Presentation Styling */
+#embedded-presentation iframe {
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    display: block;
+    margin: 0 auto;
+}
+
 
 #right-box-text {
     font-size: 1.2em;
