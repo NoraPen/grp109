@@ -11,7 +11,7 @@ body {
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #005C5C; /* Seattle Blue */
+    background-color: #003737; /* UPDATED: Darkened Seattle Blue for improved contrast */
     padding: 10px;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -30,9 +30,9 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Navigation Bar Styling For siteimprovement*/
+/* Navigation Bar Styling For site improvement */
 nav ul li a {
-    color: #E3F2FD; /* UPDATED: Changed from 'white' to a very light blue for improved readability */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for better readability */
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -41,7 +41,6 @@ nav ul li a {
     display: inline-block;
     min-height: 44px; /* ADDED: Ensures minimum height for accessibility */
 }
-
 
 nav ul li a:hover {
     background-color: #004a4a; /* Darker Seattle Blue */
@@ -57,17 +56,8 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-#embedded-presentation iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3; /* Adjust aspect ratio (4:3 or 16:9) based on your presentation */
-    max-width: 788px; 
-    border: none; 
-}
-
-
 #top-box h1 {
-    color: #E3F2FD; /* UPDATED: Changed from Seahawks Green to a very light blue for better contrast with silver background */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for improved contrast with silver background */
     margin: 0;
 }
 
@@ -93,29 +83,21 @@ nav ul li a:hover {
 
 #right-box-text {
     font-size: 1.2em;
-    color: #002244; /* Navy blue */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for improved readability */
     margin-bottom: 15px;
-}
-
-/* Embedded Presentation Styling */
-#embedded-presentation iframe {
-    border: none;
-    width: 100%;
-    max-width: 800px;
-    height: 600px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #005C5C; /* Seattle Blue */
-    color: #E3F2FD; /* UPDATED: Changed from 'white' to light blue for better readability */
+    background-color: #003737; /* UPDATED: Darkened Seattle Blue for improved contrast */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for better readability */
     text-align: center;
     padding: 10px;
     width: 100%;
 }
 
 footer a {
-    color: #E3F2FD; /* UPDATED: Changed from 'white' to light blue for improved readability */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for better readability */
     text-decoration: none;
 }
 
@@ -125,7 +107,7 @@ footer a:hover {
 
 /* Link Styling for General Text */
 a {
-    color: #E3F2FD; /* UPDATED: Changed from 'white' to light blue for improved readability */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for improved readability */
     text-decoration: none;
 }
 
