@@ -53,6 +53,15 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+#embedded-presentation iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Adjust aspect ratio (4:3 or 16:9) based on your presentation */
+    max-width: 788px; 
+    border: none; 
+}
+
+
 #top-box h1 {
     color: #69BE28; /* Seahawks Green */
     margin: 0;
