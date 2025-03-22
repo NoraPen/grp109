@@ -80,7 +80,7 @@ nav ul li a:hover {
     padding: 25px;
     text-align: center;
     max-width: 80%;
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -88,9 +88,9 @@ nav ul li a:hover {
 /* Embedded Presentation Styling */
 #embedded-presentation iframe {
     border: none;
-    width: 100%;
+    width: 788px;
     max-width: 100%;
-    height: auto;
+    height: 600px;
     aspect-ratio: 4 / 3;
     display: block;
     margin: 0 auto;
