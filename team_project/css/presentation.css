@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #002244; /* Navy blue */
-    color: #D9E5E7; /* UPDATED: Changed from 'white' to a light gray-blue for better contrast */
+    color: #F5F5F5; /* UPDATED: Changed to a very light gray for improved contrast */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ nav ul li a:hover {
 /* Title Styling */
 #top-box {
     text-align: center;
-    background-color: #A5ACAF; /* Seahawks Silver */
+    background-color: #52595D; /* UPDATED: Darkened silver for improved contrast */
     padding: 20px;
     border: 4px solid #005C5C; /* Seattle Blue border */
     border-radius: 8px;
@@ -74,13 +74,13 @@ nav ul li a:hover {
 
 /* Right Box Styling (Parent Container) */
 #right-box {
-    background-color: #A5ACAF; /* Seahawks Silver */
+    background-color: #52595D; /* UPDATED: Darkened silver for improved contrast */
     border: 5px solid #005C5C; /* Seattle Blue */
     border-radius: 8px;
     padding: 25px;
     text-align: center;
-    max-width: 1000px;
-    width: auto;
+    max-width: 1000px; /* Widened for more room */
+    width: 100%; /* Ensure flexibility */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -89,13 +89,11 @@ nav ul li a:hover {
 #embedded-presentation iframe {
     border: none;
     width: 788px;
-    max-width: 100%;
     height: 600px;
     aspect-ratio: 4 / 3;
     display: block;
     margin: 0 auto;
 }
-
 
 #right-box-text {
     font-size: 1.2em;
