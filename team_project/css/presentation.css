@@ -30,7 +30,7 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Navigation Bar Styling For site improvement */
+/* Navigation Bar Styling For Site Improvement */
 nav ul li a {
     color: #FFFFFF; /* UPDATED: Changed to pure white for better readability */
     text-decoration: none;
@@ -74,7 +74,7 @@ nav ul li a:hover {
 
 /* Right Box Styling (Parent Container) */
 #right-box {
-    background-color: #52595D; /* UPDATED: Darkened silver for improved contrast */
+    background-color: #373c3f; /* UPDATED: Darkened background for improved contrast in Volunteer Presentation */
     border: 5px solid #005C5C; /* Seattle Blue */
     border-radius: 8px;
     padding: 25px;
@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 #right-box-text {
     font-size: 1.2em;
-    color: #FFFFFF; /* UPDATED: Changed to pure white for improved readability */
+    color: #F5F5F5; /* RETAINED: Very light gray text for readability */
     margin-bottom: 15px;
 }
 
@@ -121,7 +121,7 @@ footer a:hover {
 
 /* Link Styling for General Text */
 a {
-    color: #FFFFFF; /* UPDATED: Changed to pure white for improved readability */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for better readability */
     text-decoration: none;
 }
 
