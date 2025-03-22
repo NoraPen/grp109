@@ -128,6 +128,36 @@ footer {
     flex-shrink: 0; 
 }
 
+/* Styling for the toggle auto-scroll button */
+#toggle-auto-scroll {
+    background-color: #69BE28; /* Seahawks Green */
+    color: white; /* White text */
+    font-size: 1.2em; /* Slightly larger text */
+    font-weight: bold; /* Bold font for emphasis */
+    border: 2px solid #005C5C; /* Seattle Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Spacing inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 15px; /* Space above the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+#toggle-auto-scroll:hover {
+    background-color: #005C5C; /* Seattle Blue background */
+    color: #E6E6E6; /* Light gray text */
+    border-color: #69BE28; /* Green border */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Active state for the button */
+#toggle-auto-scroll:active {
+    background-color: #004a4a; /* Darker blue for active state */
+    transform: scale(0.95); /* Slightly shrink button for click effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
 /*Link Color*/
 
 /* Default Link */
