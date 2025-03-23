@@ -98,6 +98,20 @@ footer a {
     text-decoration: none; /* Removes underline for cleaner appearance */
 }
 
+/* Styling for "Return to Home Page" */
+a.return-home {
+    color: #FFFFFF; /* Pure white for maximum readability */
+    background-color: #002244; /* Navy blue for strong contrast */
+    padding: 10px; /* Adds spacing for visual clarity */
+    border-radius: 5px; /* Optional enhancement for rounded corners */
+    text-decoration: none; /* Removes underline for cleaner appearance */
+}
+
+a.return-home:hover {
+    background-color: #005C5C; /* Slightly lighter teal for hover effect */
+}
+
+
 footer a:hover {
     background-color: #005C5C; /* Slightly lighter blue for hover effect */
 }
