@@ -121,6 +121,7 @@ nav ul li a:hover {
 
 /* Styling for "Meet Seattle-themed Doggos!!" */
 #volunteer-name {
+    line-height: 1.5; /* Ensures adequate spacing between lines for better readability */
     color: #FFFFFF; /* Pure white text for maximum readability */
     background-color: #003737; /* Dark Seattle Blue background */
     padding: 10px; /* Add spacing for better visibility */
