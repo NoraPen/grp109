@@ -2,11 +2,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #002244; /* Navy blue */
-    color: #F5F5F5; /* Light gray for improved contrast */
+    color: #FFFFFF; /* Pure white for enhanced contrast */
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.6; /* Updated to meet minimum visual presentation */
 }
 
 html, body {
@@ -36,20 +37,22 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Navigation Bar Styling */
 nav ul li a {
-    color: #FFFFFF; /* Pure white for improved readability */
+    color: #FFFFFF; /* Pure white for high contrast */
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 12px 20px; /* Adjusted for accessibility compliance */
     border-radius: 5px;
     transition: background-color 0.3s;
     display: inline-block;
-    min-height: 44px; /* Ensures accessibility compliance */
+    min-height: 44px;
+    min-width: 44px; /* Ensures enhanced clickable size */
 }
 
-nav ul li a:hover {
-    background-color: #004a4a; /* Darker Seattle Blue hover state */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #69BE28; /* Green hover and focus effect */
+    outline: 3px solid #FFFFFF; /* Adds focus visibility */
 }
 
 /* Home Page Containers */
@@ -63,11 +66,11 @@ nav ul li a:hover {
 }
 
 h1 {
-    color: #FFFFFF; /* Pure white for maximum contrast */
+    color: #FFFFFF; /* Pure white for enhanced readability */
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
-    line-height: 1.5; /* Improved spacing for readability */
+    line-height: 1.6; /* Adjusted for minimum visual presentation */
 }
 
 /* Footer Styling */
@@ -77,8 +80,23 @@ footer {
     background-color: #003737; /* Matches navigation for consistency */
     color: #FFFFFF; /* Pure white for readability */
     width: 100%;
-    flex-shrink: 0;
     margin-top: auto;
+}
+
+footer a {
+    color: #FFFFFF; /* Pure white for enhanced contrast */
+    background-color: #005C5C; /* Teal background */
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold; /* Adds emphasis */
+    display: inline-block; /* Ensures alignment */
+}
+
+footer a:hover,
+footer a:focus {
+    background-color: #69BE28; /* Green hover effect */
+    outline: 3px solid #FFFFFF; /* Adds focus visibility */
 }
 
 /* Responsive Bottom Container */
@@ -91,7 +109,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Right Box */
 #right-box {
     background-color: #A5ACAF; /* Seahawks Silver */
     flex: 1;
@@ -104,10 +121,10 @@ footer {
     font-family: Arial, sans-serif; /* Consistent font-family */
     padding: 20px;
     font-size: 30px;
-    color: #002244; /* Navy blue text for contrast */
+    color: #002244; /* Navy blue text for readability */
+    line-height: 1.6; /* Enhanced readability */
 }
 
-/* Left Container */
 .left-container {
     display: flex;
     flex-direction: column;
@@ -117,7 +134,6 @@ footer {
     gap: 20px;
 }
 
-/* Left Box */
 .left-box {
     background-color: #A5ACAF; /* Seahawks Silver */
     text-align: center;
@@ -125,26 +141,24 @@ footer {
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 20px;
+    line-height: 1.6; /* Adjusted for minimum visual presentation */
 }
 
-/* Images */
 .home-image {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
 }
 
-/* Right Box Text */
 .right-box-text {
     padding: 20px 0;
     font-size: 30px;
     color: #002244; /* Navy blue */
-    line-height: 1.5; /* Improves spacing for readability */
+    line-height: 1.6; /* Enhances readability */
 }
 
-/* Scrolling Text */
 .scrolling-text {
-    font-family: Arial, sans-serif; /* Consistent font-family */
+    font-family: Arial, sans-serif;
     font-size: 18px;
     white-space: nowrap;
     overflow: hidden;
@@ -155,26 +169,30 @@ footer {
     max-width: 120px;
 }
 
-/* Link Color */
-a {
-    color: #F5F5F5; /* Light gray for improved contrast */
-}
-
-a:hover {
-    color: #69BE28; /* Seahawks Green hover effect */
-}
-
-a:active {
-    color: #005C5C; /* Seattle Blue active effect */
-}
-
-/*Link the blinks after 2 seconds*/
+/* Blinking Animation */
 .blinking-link:hover {
     animation: blink 0.4s steps(1, end) 2s forwards; 
 }
 
 @keyframes blink {
-    0% { color: #69BE28; } /* Seahawks Green */
-    50% { color: #005C5C; } /* Seattle Blue */
-    100% { color: #69BE28; } /* Seahawks Green */
+    0% { color: #69BE28; }
+    50% { color: #005C5C; }
+    100% { color: #69BE28; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .main-content h1 {
+        font-size: 2em;
+        line-height: 1.4; /* Adjusted for smaller screens */
+    }
+
+    .about-section {
+        padding: 15px;
+    }
 }
