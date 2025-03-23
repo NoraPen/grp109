@@ -2,16 +2,16 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #002244; /* Navy blue */
-    color: #D9E5E7;
+    color: #F5F5F5; /* UPDATED: Light gray for improved contrast */
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh; /* Aligned with updated styling */
 }
 
 /* Navigation Styling */
 nav {
-    background-color: #005C5C; /* Seattle Blue */
+    background-color: #003737; /* UPDATED: Darkened Seattle Blue for improved contrast */
     padding: 10px;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -31,25 +31,24 @@ nav ul li {
 
 /* Title Styling */
 #top-box h1 {
-    color: #E3F2FD; /* UPDATED: Changed from Seahawks Green to a very light blue for better contrast with silver background */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for improved contrast */
     margin: 0;
 }
 
-/* Navigation Bar Styling For siteimprovement*/
+/* Navigation Bar Styling For Site Improvement */
 nav ul li a {
-    color: #E3F2FD; /* UPDATED: Changed from 'white' to a very light blue for improved readability */
+    color: #FFFFFF; /* UPDATED: Changed to pure white for improved readability */
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
     display: inline-block;
-    min-height: 44px; /* ADDED: Ensures minimum height for accessibility */
+    min-height: 44px; /* Ensures accessibility compliance */
 }
 
-}
 nav ul li a:hover {
-    background-color: #004a4a;
+    background-color: #004a4a; /* Hover state for darker Seattle Blue */
 }
 
 /* Carousel Wrapper Styling */
@@ -59,12 +58,12 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
+    max-width: 1000px; /* Widened for consistency */
     width: 90%;
     height: auto;
     margin: auto;
-    padding: 10px;
-    background-color: #A5ACAF; /* Seahawks Silver */
+    padding: 15px; /* Increased padding for more space */
+    background-color: #373c3f; /* UPDATED: Darkened background for better contrast */
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -78,9 +77,9 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #69BE28; /* Seahawks Green */
+    background-color: #003737; /* UPDATED: Darkened Seattle Blue for consistency */
     border: 5px solid #005C5C; /* Seattle Blue border */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
 }
 
 /* Carousel Item Styling */
@@ -109,8 +108,8 @@ nav ul li a:hover {
     font-size: 1.2em;
     margin-top: 10px;
     text-align: center;
-    color: #333;
-    background-color: #E6E6E6;
+    color: #F5F5F5; /* UPDATED: Matches body text color */
+    background-color: #52595D; /* UPDATED: Darkened silver for better contrast */
     padding: 10px;
     border-radius: 5px;
     width: 90%;
@@ -120,8 +119,8 @@ nav ul li a:hover {
 
 /* Styling for the toggle auto-scroll button */
 #toggle-auto-scroll {
-    background-color: #69BE28; /* Seahawks Green */
-    color: white; /* White text for contrast */
+    background-color: #003737; /* UPDATED: Matches navigation and general styling */
+    color: #F5F5F5; /* Light gray for contrast */
     font-size: 1.2em;
     font-weight: bold;
     border: 2px solid #005C5C; /* Seattle Blue border */
@@ -136,14 +135,14 @@ nav ul li a:hover {
 /* Hover effect for the button */
 #toggle-auto-scroll:hover {
     background-color: #005C5C; /* Seattle Blue background */
-    color: #E6E6E6; /* Light gray text */
+    color: #FFFFFF; /* Pure white text */
     border-color: #69BE28; /* Green border */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Active state for the button */
 #toggle-auto-scroll:active {
-    background-color: #004a4a;
+    background-color: #004a4a; /* Darker background when active */
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -152,7 +151,7 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #005C5C;
-    color: #E3F2FD; /* UPDATED: Changed from 'white' to light blue for improved readability */
+    background-color: #003737; /* UPDATED: Matches navigation for consistency */
+    color: #FFFFFF; /* Pure white for readability */
     width: 100%;
 }
