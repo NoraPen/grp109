@@ -6,7 +6,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Aligned with updated styling */
+    min-height: 100vh;
 }
 
 /* Navigation Styling */
@@ -58,12 +58,12 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1000px; /* Widened for consistency */
+    max-width: 800px;
     width: 90%;
     height: auto;
     margin: auto;
-    padding: 15px; /* Increased padding for more space */
-    background-color: #373c3f; /* UPDATED: Darkened background for better contrast */
+    padding: 10px;
+    background-color: #A5ACAF; /* Seahawks Silver */
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -77,7 +77,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #003737; /* UPDATED: Darkened Seattle Blue for consistency */
+    background-color: #69BE28; /* Seahawks Green */
     border: 5px solid #005C5C; /* Seattle Blue border */
     border-radius: 8px;
 }
@@ -96,6 +96,8 @@ nav ul li a:hover {
 
 /* Carousel Image Styling */
 .carousel-item img {
+    width: auto;
+    height: auto; 
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -151,7 +153,7 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #003737; /* UPDATED: Matches navigation for consistency */
+    background-color: #003737;
     color: #FFFFFF; /* Pure white for readability */
     width: 100%;
 }
