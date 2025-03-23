@@ -105,10 +105,12 @@ a.return-home {
     padding: 10px; /* Adds spacing for visual clarity */
     border-radius: 5px; /* Optional enhancement for rounded corners */
     text-decoration: none; /* Removes underline for cleaner appearance */
+    font-weight: bold;
 }
 
 a.return-home:hover {
     background-color: #005C5C; /* Slightly lighter teal for hover effect */
+    color: #FFFFFF;
 }
 
 
