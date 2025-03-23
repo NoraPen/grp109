@@ -2,12 +2,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #002244; /* Navy blue */
-    color: #FFFFFF; /* Pure white for enhanced contrast */
+    color: #F5F5F5; /* Light gray for improved contrast */
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.6; /* Updated to meet minimum visual presentation */
 }
 
 html, body {
@@ -37,22 +36,21 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Navigation Bar Styling */
 nav ul li a {
-    color: #FFFFFF; /* Pure white for high contrast */
+    color: #FFFFFF; /* Pure white for improved readability */
     text-decoration: none;
     font-size: 18px;
-    padding: 12px 20px; /* Adjusted for accessibility compliance */
+    padding: 10px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Smooth hover effect */
     display: inline-block;
-    min-height: 44px;
-    min-width: 44px; /* Ensures enhanced clickable size */
+    min-height: 44px; /* Accessibility compliance */
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: #69BE28; /* Green hover and focus effect */
-    outline: 3px solid #FFFFFF; /* Adds focus visibility */
+nav ul li a:hover {
+    background-color: #004a4a; /* Original Darker Seattle Blue hover background */
+    color: #FFFFFF; /* White text for hover consistency */
 }
 
 /* Home Page Containers */
@@ -66,11 +64,51 @@ nav ul li a:focus {
 }
 
 h1 {
-    color: #FFFFFF; /* Pure white for enhanced readability */
+    color: #FFFFFF; /* Pure white for maximum contrast */
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
-    line-height: 1.6; /* Adjusted for minimum visual presentation */
+    line-height: 1.5; /* Improved spacing for readability */
+}
+
+/* Updated Box Backgrounds for Contrast */
+.left-box {
+    background-color: #7A848F; /* Darkened grey for improved contrast */
+    text-align: center;
+    border: 4px solid #005C5C; /* Seattle Blue border */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#right-box {
+    background-color: #7A848F; /* Darkened grey for improved contrast */
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+    text-align: center;
+    border: 4px solid #005C5C; /* Seattle Blue border */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    font-size: 30px;
+    color: #FFFFFF; /* Updated to pure white for maximum contrast */
+}
+
+/* Scrolling Text Styling */
+.scrolling-text {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Larger font for readability */
+    color: #FFFFFF; /* Pure white text */
+    background-color: #7A848F; /* Darkened grey background for contrast */
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Footer Styling */
@@ -80,23 +118,25 @@ footer {
     background-color: #003737; /* Matches navigation for consistency */
     color: #FFFFFF; /* Pure white for readability */
     width: 100%;
+    flex-shrink: 0;
     margin-top: auto;
 }
 
 footer a {
-    color: #FFFFFF; /* Pure white for enhanced contrast */
-    background-color: #005C5C; /* Teal background */
-    padding: 12px 20px;
-    border-radius: 5px;
+    color: #FFFFFF; /* Pure white for maximum contrast */
+    background-color: #333333; /* Dark gray background */
+    padding: 5px 10px;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: bold; /* Adds emphasis */
-    display: inline-block; /* Ensures alignment */
 }
 
-footer a:hover,
-footer a:focus {
-    background-color: #69BE28; /* Green hover effect */
-    outline: 3px solid #FFFFFF; /* Adds focus visibility */
+footer a:hover {
+    background-color: #005C5C; /* Slightly lighter blue for hover effect */
+}
+
+footer p {
+    line-height: 1.5; /* Ensures readability with proper spacing */
+    margin: 0; /* Adjusts spacing for compact layout */
 }
 
 /* Responsive Bottom Container */
@@ -107,92 +147,4 @@ footer a:focus {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-#right-box {
-    background-color: #A5ACAF; /* Seahawks Silver */
-    flex: 1;
-    min-width: 300px;
-    max-width: 48%;
-    text-align: center;
-    border: 4px solid #005C5C; /* Seattle Blue */
-    border-radius: 8px;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif; /* Consistent font-family */
-    padding: 20px;
-    font-size: 30px;
-    color: #002244; /* Navy blue text for readability */
-    line-height: 1.6; /* Enhanced readability */
-}
-
-.left-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 300px;
-    max-width: 120%;
-    gap: 20px;
-}
-
-.left-box {
-    background-color: #A5ACAF; /* Seahawks Silver */
-    text-align: center;
-    border: 4px solid #005C5C; /* Seattle Blue */
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 20px;
-    line-height: 1.6; /* Adjusted for minimum visual presentation */
-}
-
-.home-image {
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
-}
-
-.right-box-text {
-    padding: 20px 0;
-    font-size: 30px;
-    color: #002244; /* Navy blue */
-    line-height: 1.6; /* Enhances readability */
-}
-
-.scrolling-text {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    max-width: 120px;
-}
-
-/* Blinking Animation */
-.blinking-link:hover {
-    animation: blink 0.4s steps(1, end) 2s forwards; 
-}
-
-@keyframes blink {
-    0% { color: #69BE28; }
-    50% { color: #005C5C; }
-    100% { color: #69BE28; }
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .main-content {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    .main-content h1 {
-        font-size: 2em;
-        line-height: 1.4; /* Adjusted for smaller screens */
-    }
-
-    .about-section {
-        padding: 15px;
-    }
 }
