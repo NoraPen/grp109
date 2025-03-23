@@ -100,18 +100,20 @@ footer a {
 
 /* Styling for "Return to Home Page" */
 a.return-home {
-    color: #FFFFFF; /* Pure white for maximum readability */
-    background-color: #002244; /* Navy blue for strong contrast */
-    padding: 10px; /* Adds spacing for visual clarity */
-    border-radius: 5px; /* Optional enhancement for rounded corners */
-    text-decoration: none; /* Removes underline for cleaner appearance */
-    font-weight: bold;
+    color: #FFFFFF; /* Pure white text */
+    background-color: #005C5C; /* Teal background */
+    padding: 10px 15px; /* Adds space around the link */
+    border-radius: 5px; /* Optional for rounded corners */
+    text-decoration: none; /* Removes underline for a cleaner look */
+    font-weight: bold; /* Makes the text more prominent */
+    display: inline-block; /* Ensures proper alignment */
 }
 
-a.return-home:hover {
-    background-color: #005C5C; /* Slightly lighter teal for hover effect */
-    color: #FFFFFF;
+a.return-home {
+    color: #FFFFFF !important; /* Force white text */
+    background-color: #005C5C !important; /* Force teal background */
 }
+
 
 
 footer a:hover {
