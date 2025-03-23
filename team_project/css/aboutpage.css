@@ -5,7 +5,159 @@ body {
     color: white;
     margin: 0;
     display: flex;
+    flex-direction: column;/* About Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002244; /* Navy blue */
+    color: #F5F5F5; /* Light gray for improved contrast */
+    margin: 0;
+    display: flex;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #003737; /* Darkened Seattle Blue for improved contrast */
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Pure white for improved readability */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    min-height: 44px; /* Ensures accessibility compliance */
+}
+
+nav ul li a:hover {
+    background-color: #004a4a; /* Darker Seattle Blue hover state */
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #FFFFFF; /* Pure white for maximum contrast */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    line-height: 1.5; /* Improved spacing for readability */
+}
+
+.about-section {
+    background-color: #A5ACAF; /* Seahawks Silver */
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 8px;
+    border: 5px solid #005C5C; /* Seattle Blue */
+}
+
+.about-section h2 {
+    color: #002244; /* Navy Blue */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    line-height: 1.4; /* Ensures adequate spacing */
+}
+
+.about-section p {
+    color: #002244; /* Navy Blue */
+    line-height: 1.6; /* Maintained spacing for readability */
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.about-section ul {
+    color: #002244; /* Navy Blue */
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.about-section li {
+    margin: 10px 0;
+    line-height: 1.6; /* Updated spacing for consistency */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003737; /* Darkened Seattle Blue */
+    color: #FFFFFF; /* Pure white for readability */
+    width: 100%;
+}
+
+footer a.footer-link {
+    color: #FFFFFF; /* Pure white text for contrast */
+    background-color: #005C5C; /* Teal background */
+    padding: 10px 15px; /* Adds space around the link */
+    border-radius: 5px; /* Rounded corners for better accessibility */
+    text-decoration: none; /* Removes underline for a cleaner look */
+    font-weight: bold; /* Makes text more prominent */
+    display: inline-block; /* Ensures proper alignment */
+}
+
+footer a.footer-link:hover,
+footer a.footer-link:focus {
+    background-color: #69BE28; /* Green hover and focus effect */
+    outline: 3px solid #FFFFFF; /* Adds clear focus outline */
+}
+
+/* Link Styling */
+.about-section a {
+    color: #FFFFFF; /* Pure white for maximum contrast and readability */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-section a:hover,
+.about-section a:focus {
+    color: #69BE28; /* Seahawks Green for emphasis in hover and focus states */
+    text-decoration: underline; /* Adds a visual indicator */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .main-content h1 {
+        font-size: 2em;
+        line-height: 1.4; /* Adjusted for smaller screens */
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+}
+
     min-height: 100vh;
 }
 
