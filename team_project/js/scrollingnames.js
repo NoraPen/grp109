@@ -1,13 +1,14 @@
-var text = document.getElementById("text");
-    var position = 100; 
+var text = document.getElementById("scroll-text");
+    var position = window.innerWidth; 
 
-    function moveText() {
-        position += 10;  
-        text.style.left = position + "px";  
+    function scrollText() {
+        position -= 2; 
+        text.style.transform = `translateX(${position}px)`;
 
-        if (position > 300) { 
-            clearInterval(interval);
+        
+        if (position < -text.offsetWidth) {
+            position = window.innerWidth; 
         }
     }
 
-    var interval = setInterval(moveText, 500);
+    setInterval(scrollText, 20);
