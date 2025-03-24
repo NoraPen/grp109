@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 /* About Section Styling */
 .about-section {
-    background-color: #333333; 
+    background-color: #333333; /* Seahawks Silver */
     margin: 20px 0;
     padding: 25px;
     border-radius: 8px;
@@ -98,6 +98,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+
 /* Footer Styling */
 footer {
     text-align: center;
@@ -105,6 +106,7 @@ footer {
     background-color: #003737; /* Darkened Seattle Blue */
     color: #FFFFFF; /* White for text */
     width: 100%;
+    line-height: 1.8; /* Applies proper line spacing to all text in the footer */
 }
 
 footer a {
@@ -114,31 +116,15 @@ footer a {
     font-size: 2em;
     font-weight: bold;
     padding: 20px 40px;
-    border-radius: 5px; 
-    text-decoration: none;
-    text-align: center; 
-    line-height: 1.5; /* Line height explicitly set to 1.5 */
+    border-radius: 5px;
+    text-decoration: none; 
+    text-align: center;
+    line-height: 1.8; /* Specific line-height for the "See changelog" element */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 footer a:hover {
     background-color: #003737; /* Darker teal on hover */
     transform: scale(1.05); /* Adds a zoom effect */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .main-content {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    .main-content h1 {
-        font-size: 2em;
-        line-height: 1.4;
-    }
-
-    .about-section {
-        padding: 15px;
-    }
+    line-height: 1.8;
 }
