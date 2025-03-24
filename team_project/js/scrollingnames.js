@@ -3,4 +3,4 @@ function startScrolling() {
         
         text.classList.add("scrolling");
         
-    window.onload = startScrolling;
+window.onload = startScrolling();
