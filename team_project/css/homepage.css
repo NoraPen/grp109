@@ -138,6 +138,9 @@ nav ul li a:hover {
     white-space: nowrap;
     position: absolute;
 }
+.scrolling {
+    animation: scroll-left 10s linear infinite;
+}
 
 .animate-scroll {
     animation: scroll-left 10s linear infinite;
