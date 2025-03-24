@@ -1,14 +1,7 @@
-var text = document.getElementById("scroll-text");
-    var position = window.innerWidth; 
-
-    function scrollText() {
-        position -= 2; 
-        text.style.transform = `translateX(${position}px)`;
-
-        
-        if (position < -text.offsetWidth) {
-            position = window.innerWidth; 
-        }
+function startScrolling() {
+        let text = document.getElementById("scroll-text");
+        text.classList.add("animate-scroll"); /
     }
 
-    setInterval(scrollText, 20);
+    
+startScrolling();
