@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 /* About Section Styling */
 .about-section {
-    background-color: #333333; /* Seahawks Silver */
+    background-color: #333333; 
     margin: 20px 0;
     padding: 25px;
     border-radius: 8px;
@@ -114,10 +114,10 @@ footer a {
     font-size: 2em;
     font-weight: bold;
     padding: 20px 40px;
-    border-radius: 5px;
+    border-radius: 5px; 
     text-decoration: none;
-    text-align: center;
-    line-height: 1.8;
+    text-align: center; 
+    line-height: 1.5; /* Line height explicitly set to 1.5 */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
