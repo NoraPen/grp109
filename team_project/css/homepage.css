@@ -123,8 +123,10 @@ nav ul li a:hover {
 .scrolling-text {
     overflow: hidden;
     white-space: nowrap;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
     background-color: #373c3f;
+    left: 100px;
     font-size: 18px;
     color: #FFFFFF; /* Pure white for readability */
     text-align: center;
@@ -133,7 +135,7 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.scrolling-text span {
+/*.scrolling-text span {
     display: inline-block;
     white-space: nowrap;
     position: absolute;
@@ -147,7 +149,7 @@ nav ul li a:hover {
     100% {
         transform: translateX(-100%);
     }
-}
+} */
 
 /* Footer Styling */
 footer {
