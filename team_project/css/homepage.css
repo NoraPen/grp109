@@ -123,10 +123,8 @@ nav ul li a:hover {
 .scrolling-text {
     overflow: hidden;
     white-space: nowrap;
-    /* position: relative; */
-    position: absolute;
+    position: relative; 
     background-color: #373c3f;
-    left: 100px;
     font-size: 18px;
     color: #FFFFFF; /* Pure white for readability */
     text-align: center;
@@ -135,14 +133,15 @@ nav ul li a:hover {
     width: 100%;
 }
 
-/*.scrolling-text span {
+.scrolling-text span {
     display: inline-block;
     white-space: nowrap;
     position: absolute;
-    animation: scroll-left 10s linear infinite;
+    transform: translateX(100vw);
+    /*animation: scroll-left 10s linear infinite;*/
 }
 
-@keyframes scroll-left {
+/* @keyframes scroll-left {
     0% {
         transform: translateX(100%);
     }
