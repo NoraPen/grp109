@@ -3,33 +3,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #002244;
+    background-color: #002244; /* Navy blue */
     color: white;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #005C5C;
-    padding: 1em 0;
+    background-color: #005C5C; /* Seattle Blue */
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: white;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Pure white for readability */
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    min-height: 44px; /* Ensures accessibility compliance */
 }
 
-nav a:hover {
-    color: #69BE28;
+nav ul li a:hover {
+    background-color: #004a4a; /* Darker Seattle Blue on hover */
+    text-decoration: none; /* Ensures no underline on hover */
 }
 
 /* Main content styles */
@@ -40,20 +52,33 @@ nav a:hover {
 }
 
 h1 {
-    color: #69BE28;
+    color: #FFFFFF; /* Pure white */
     text-align: center;
     margin-bottom: 1em;
 }
 
-.about-section {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2em;
-    border-radius: 8px;
-    margin-top: 2em;
+.about-section a {
+    display: inline-block; /* Makes the link behave like a button */
+    background-color: #005C5C; /* Teal background */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.about-section a:hover {
+    background-color: #003737; /* Darker teal on hover */
+    transform: scale(1.05);
+}
+
+/* Heading styles */
 h2 {
-    color: #69BE28;
+    color: #FFFFFF; /* Pure white */
     margin-bottom: 1em;
 }
 
@@ -64,7 +89,7 @@ h2 {
     display: block;
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* List styles */
@@ -79,12 +104,12 @@ li {
 
 /* Link styles */
 a {
-    color: #69BE28;
+    color: #FFFFFF; /* Pure white */
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Footer styles */
@@ -96,5 +121,5 @@ footer {
 }
 
 footer a {
-    color: #69BE28;
-} 
+    color: #69BE28; /* Seahawks Green */
+}
