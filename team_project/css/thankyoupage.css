@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #002244; /* Navy blue */
     color: white;
+    line-height: 1.8; /* Universal line-height applied */
 }
 
 /* Navigation styles */
@@ -37,11 +38,12 @@ nav ul li a {
     transition: background-color 0.3s ease;
     display: inline-block;
     min-height: 44px; /* Ensures accessibility compliance */
+    line-height: 1.8; /* Consistent line-height */
 }
 
 nav ul li a:hover {
     background-color: #004a4a; /* Darker Seattle Blue on hover */
-    text-decoration: none; /* Ensures no underline on hover */
+    text-decoration: none;
 }
 
 /* Main content styles */
@@ -49,16 +51,18 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 2em;
+    line-height: 1.8; /* Consistent line-height */
 }
 
 h1 {
     color: #FFFFFF; /* Pure white */
     text-align: center;
     margin-bottom: 1em;
+    line-height: 1.8; /* Consistent line-height */
 }
 
 .about-section a {
-    display: inline-block; /* Makes the link behave like a button */
+    display: inline-block;
     background-color: #005C5C; /* Teal background */
     color: #FFFFFF; /* White text for contrast */
     padding: 10px 20px;
@@ -68,18 +72,19 @@ h1 {
     font-weight: bold;
     line-height: 1.8;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
 }
 
 .about-section a:hover {
     background-color: #003737; /* Darker teal on hover */
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Heading styles */
 h2 {
     color: #FFFFFF; /* Pure white */
     margin-bottom: 1em;
+    line-height: 1.8; /* Consistent line-height */
 }
 
 /* Thank you image styles */
@@ -88,38 +93,43 @@ h2 {
     height: auto;
     display: block;
     margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* List styles */
 ul {
     margin: 1em 0;
     padding-left: 2em;
+    line-height: 1.8; /* Consistent line-height */
 }
 
 li {
     margin-bottom: 0.5em;
+    line-height: 1.8; /* Consistent line-height */
 }
 
 /* Link styles */
 a {
     color: #FFFFFF; /* Pure white */
     text-decoration: none;
+    line-height: 1.8;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Footer styles */
 footer {
     text-align: center;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background color */
     margin-top: 2em;
+    line-height: 1.8; /* Consistent line-height */
 }
 
 footer a {
     color: #69BE28; /* Seahawks Green */
+    line-height: 1.8; /* Consistent line-height */
 }
