@@ -1,14 +1,18 @@
 const container = document.querySelector('.scrolling-text');
 let scrollAmount = 0;
 const speed = 2;
+const intervalTime = 16;
 
-setInterval(() => {
-    if (!container) return;
+const interval = setInterval(() => {
+    if (!container) {
+        clearInterval(interval);
+        return;
+    }
 
     scrollAmount += speed;
     container.scrollLeft = scrollAmount;
 
     if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-        scrollAmount = 0; 
+        scrollAmount = 0;
     }
-}, 30); 
+}, intervalTime);
