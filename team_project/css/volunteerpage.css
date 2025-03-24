@@ -14,7 +14,7 @@ nav {
     background-color: #005C5C; /* Seattle Blue */
     padding: 10px;
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
 }
 
 nav ul {
@@ -31,16 +31,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF; /* Pure white for readability */
     text-decoration: none;
     font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 10px 15px; /* Adjusted for consistency */
+    border-radius: 5px; /* Rounded corners for a cohesive look */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    display: inline-block;
+    min-height: 44px; /* Ensures accessibility compliance */
 }
 
 nav ul li a:hover {
-    background-color: #004a4a;
+    background-color: #004a4a; /* Darker Seattle Blue on hover */
 }
 
 /* Main Content Styling */
@@ -52,14 +54,14 @@ nav ul li a:hover {
 }
 
 .main-content h1 {
-    color: #69BE28; /* Seahawks Green */
+    color: #FFFFFF; /* Seahawks Green */
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
 }
 
 .about-section {
-    background-color: #A5ACAF; /* Seahawks Silver */
+    background-color: #333333; /* Seahawks Silver */
     margin: 20px 0;
     padding: 25px;
     border-radius: 8px;
@@ -67,7 +69,7 @@ nav ul li a:hover {
 }
 
 .about-section h2 {
-    color: #002244; /* Navy Blue */
+    color: #FFFFFF; /* Navy Blue */
     margin-bottom: 15px;
     font-size: 1.8em;
 }
@@ -80,7 +82,7 @@ nav ul li a:hover {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #002244;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
