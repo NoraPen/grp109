@@ -122,9 +122,9 @@ nav ul li a:hover {
 
 /* Blinking effect */
 @keyframes blink {
-    0% { color: #69BE28; } /* Green of Hover */
-    50% { color: #005C5C; } /* Blink to Blue */
-    100% { color: #69BE28; } /* Back to Green */
+    0% { background-color: #69BE28; } /* Green of Hover */
+    50% { background-color: #005C5C; } /* Blink to Blue */
+    100% { background-color: #69BE28; } /* Back to Green */
 }
 
 
