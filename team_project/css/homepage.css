@@ -117,7 +117,16 @@ nav ul li a:hover {
     background-color: #69BE28; /* Green hover/focus effect */
     transform: scale(1.05); /* Slight zoom effect */
     outline: 2px solid #FFFFFF; /* Focus outline for better accessibility */
+    animation: blink 0.4s steps(1, end) 2s forwards; /* Delayed blink effect */
 }
+
+/* Blinking effect */
+@keyframes blink {
+    0% { color: #69BE28; } /* Green of Hover */
+    50% { color: #005C5C; } /* Blink to Blue */
+    100% { color: #69BE28; } /* Back to Green */
+}
+
 
 /* Scrolling Text Styling */
 .scrolling-text {
