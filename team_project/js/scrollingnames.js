@@ -1,6 +1,6 @@
 function startScrolling() {
-        let text = document.getElementById("scrolling-text");
+        const text = document.getElementById("scrolling-text").classList;
         
-        text.classList.add("scrolling");
+        text.add("scrolling");
 }        
 window.onload = startScrolling;
