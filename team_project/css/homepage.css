@@ -144,10 +144,10 @@ nav ul li a:hover {
 
 @keyframes scroll-left {
             from {
-                transform: translateX(100%);
+                transform: translateX(16%);
             }
             to {
-                transform: translateX(-100%);
+                transform: translateX(-16%);
             }
         }
 
